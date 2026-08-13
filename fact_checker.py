@@ -79,7 +79,10 @@ def extract_claims(document_text: str, model: str = DEFAULT_MODEL, max_claims: i
     )
     output = _ollama_chat(prompt, model=model, system=SYSTEM_EXTRACT)
     data = _parse_json(output)
-    return data.get("claims", [])[:max_claims]
+    if isinstance(data, list):
+    return data[:max_claims]
+
+return data.get("claims", [])[:max_claims]
 
 
 def web_search(query: str, max_results: int = 6) -> list[dict]:
