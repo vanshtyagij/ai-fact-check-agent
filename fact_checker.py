@@ -1,5 +1,5 @@
 import json
-import r
+import requests
 SYSTEM_EXTRACT = """Extract the factual claims from the provided text.
 Return only clear, verifiable factual claims."""
 from typing import Any
