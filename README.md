@@ -60,11 +60,11 @@ Claim Evaluation
      ↓
 Final Fact-Check Result
 
-Verdict Categories
+#Verdict Categories
 
 🟢 Verified
 
-Reliable evidence supports the claim.
+#Reliable evidence supports the claim.
 
 🟡 Inaccurate
 
@@ -72,15 +72,15 @@ The claim is partially incorrect, misleading, or needs correction.
 
 🔴 False
 
-Reliable evidence directly contradicts the claim.
+#Reliable evidence directly contradicts the claim.
 
 ⚪ Unverified
 
-Sufficient reliable evidence could not be found. This does not automatically mean the claim is false.
+#Sufficient reliable evidence could not be found. This does not automatically mean the claim is false.
 
-Installation
+##Installation
 
-1. Install Ollama
+#1. Install Ollama
 
 Install Ollama and make sure the Ollama service is running.
 
@@ -94,23 +94,23 @@ After confirming that the model responds, press:
 Ctrl + C
 to exit.
 
-2. Create and activate a virtual environment
+#2. Create and activate a virtual environment
 
 python -m venv .venv
 Windows:
 .venv\Scripts\activate
 
-3. Install dependencies
+#3. Install dependencies
 
 pip install -r requirements.txt
 
-4. Run the application
+#4. Run the application
 
 streamlit run app.py
 Open the local URL shown by Streamlit, usually:
 http://localhost:8501
 
-Project Structure
+##Project Structure
 
 ai-fact-check-agent/
 │
@@ -131,11 +131,11 @@ ai-fact-check-agent/
 ├── DEMO_VIDEO_SCRIPT.md
 └── SUBMISSION_TEMPLATE.txt
 
-Sample Data
+##Sample Data
 
 The sample_data directory contains sample documents that can be used to test the application.
 
-Local AI
+##Local AI
 
 This project uses Ollama and a locally running Llama model instead of the OpenAI API.
 
@@ -145,13 +145,13 @@ No OpenAI API credits are required.
 AI inference is performed locally.
 Internet access is still required for web evidence searches.
 
-Important Limitation
+##Important Limitation
 
 The current implementation uses an Ollama model running locally on the user's computer.
 Therefore, a standard cloud deployment cannot directly access the Ollama model running on a personal laptop.
 For cloud deployment, a cloud-accessible AI inference backend or hosted model would be required.
 
-Limitations
+##Limitations
 
 Verification quality depends on the quality and availability of web evidence.
 The local 3B model has limited reasoning capability compared with larger models.
@@ -159,7 +159,7 @@ Some complex claims may require manual verification.
 Current web evidence requires an active internet connection.
 AI-generated verdicts should be treated as decision support rather than absolute truth.
 
-Future Scope
+##Future Scope
 
 Possible improvements include:
 Larger and more capable local language models
@@ -172,6 +172,6 @@ Better confidence calibration
 Database of previously verified claims
 Cloud-compatible AI inference
 
-License
+##License
 
 This project was developed as part of a Product Management Trainee assessment.
