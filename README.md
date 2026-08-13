@@ -1,5 +1,5 @@
 
-"""# AI Fact-Check Agent
+# AI Fact-Check Agent
 
 An AI-powered fact-checking application that extracts factual claims from PDF documents, searches the web for supporting evidence, and evaluates each claim using a locally running AI model through Ollama.
 
@@ -64,7 +64,7 @@ Windows:
 
 python -m venv .venv
 
-.venv\\Scripts\\activate
+.venv\Scripts\activate
 
 ### 3. Install Dependencies
 
@@ -128,6 +128,3 @@ The current implementation uses an Ollama model running locally on the user's co
 ## License
 
 Developed as part of a Product Management Trainee assessment project.
-"""
-
-
