@@ -1,7 +1,7 @@
 import json
 import streamlit as st
-from app.pdf_utils import extract_pdf_text
-from app.fact_checker import DEFAULT_MODEL, extract_claims, verify_claims
+from pdf_utils import extract_pdf_text
+from fact_checker import DEFAULT_MODEL, extract_claims, verify_claims
 
 st.set_page_config(page_title="Fact-Check Agent", page_icon="🔎", layout="wide")
 
