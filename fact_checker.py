@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.1-flash-lite"
 
 SYSTEM_EXTRACT = """
 You extract factual claims from documents for a fact-checking application.
