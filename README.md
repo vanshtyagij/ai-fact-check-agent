@@ -74,9 +74,9 @@ pip install -r requirements.txt
 
 streamlit run app.py
 
-Open the local URL shown by Streamlit, usually:
+Open the URL shown by Streamlit, usually:
 
-http://localhost:8501
+https://vansh-ai-fact-check.streamlit.app/
 
 ## Project Structure
 
