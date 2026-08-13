@@ -1,5 +1,5 @@
 
-content = """# AI Fact-Check Agent
+"""# AI Fact-Check Agent
 
 An AI-powered fact-checking application that extracts factual claims from PDF documents, searches the web for supporting evidence, and evaluates each claim using a locally running AI model through Ollama.
 
